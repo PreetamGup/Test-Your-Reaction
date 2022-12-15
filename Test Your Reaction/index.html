@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Your Reaction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Test Your Reaction</h1>
+    <p>Click on boxes and circles as quickly as you can</p>
+    
+
+    <div class="content">
+        <!-- display reation time -->
+            <span class="reactionTime">
+                Reaction Time: <span id="timeTaken"></span>
+            </span>
+            <span id="best">Your Best Reaction Time: <span id="bestTime"></span></span>
+
+        <!-- refresh button  -->
+        <button id="btnRefresh" onclick="refreshTime()">Refresh</button>
+
+        <div id="shape" value="PLAY"></div>
+
+        <!-- play audio on shape click -->
+        <audio id="audio" src="click.wav"></audio>
+
+        <script src="game.js"></script>
+    </div>
+</body>
+</html>
